@@ -1,4 +1,6 @@
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from "vue";
+import Main from './components/Main.vue';
+import makeStore from './store';
 
-createApp(App).mount('#app')
+
+createApp(Main).use(makeStore()).mount('#app');
